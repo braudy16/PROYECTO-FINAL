@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content-all{
+    width: 100%;
+
+}
+
+.content-carrusel{
+    width: 80%;
+
+}
+
+.content-carrusel figure{
+    width: 100%;
+    height: 100%;
+}
+
+.content-carrusel img{
+    width: 100%;
+    
+}
