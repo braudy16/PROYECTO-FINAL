@@ -5,22 +5,40 @@
 }
 
 .content-all{
-    width: 100%;
-
+    width: 410px;
+    margin: auto;
+    perspective: 1000px;
+    position: relative;
+    margin-top: 50px;
 }
 
 .content-carrusel{
-    width: 50%;
+    width: 100%;
     position: absolute;
     animation: rotar 10s infinite linear;
+    transform-style: preserve-3d;
 
+
+}
+
+.content-carrusel:hover{
+    animation-play-state: paused;
+    cursor: pointer;
 }
 
 .content-carrusel figure{
     width: 100%;
-    height: 100%;
+    height: 400px;
+    overflow: hidden;
     position: absolute;
+    box-shadow: 0px 0px 20px 0px red;
 }
+
+.content-carrusel figure:hover{
+    box-shadow: 0px 0px  0px red;
+}
+
+
 
 .content-carrusel figure:nth-child(1){transform: rotateY(0deg)
 translateZ(300px);}
@@ -42,7 +60,13 @@ translateZ(300px);}
 
 .content-carrusel img{
     width: 100%;
+    transition: all 300ms;
 
+}
+
+.content-carrusel img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
 }
 
 @keyframes rotar {
